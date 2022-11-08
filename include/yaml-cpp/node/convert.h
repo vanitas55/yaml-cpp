@@ -224,7 +224,7 @@ template <>
 struct convert<bool> {
   static Node encode(bool rhs) { return rhs ? Node("true") : Node("false"); }
 
-  YAML_CPP_API static bool decode(const Node& node, bool& rhs);
+   static bool decode(const Node& node, bool& rhs);
 };
 
 // std::map

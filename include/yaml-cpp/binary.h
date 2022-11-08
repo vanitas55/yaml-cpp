@@ -13,11 +13,11 @@
 #include "yaml-cpp/dll.h"
 
 namespace YAML {
-YAML_CPP_API std::string EncodeBase64(const unsigned char *data,
+ std::string EncodeBase64(const unsigned char *data,
                                       std::size_t size);
-YAML_CPP_API std::vector<unsigned char> DecodeBase64(const std::string &input);
+ std::vector<unsigned char> DecodeBase64(const std::string &input);
 
-class YAML_CPP_API Binary {
+class  Binary {
  public:
   Binary(const unsigned char *data_, std::size_t size_)
       : m_data{}, m_unownedData(data_), m_unownedSize(size_) {}

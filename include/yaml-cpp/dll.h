@@ -8,32 +8,32 @@
 // (definition created by CMake or defined manually)
 
 #ifdef YAML_CPP_STATIC_DEFINE
-#  define YAML_CPP_API
+#  define 
 #  define YAML_CPP_NO_EXPORT
 #else
 #  if defined(_MSC_VER) || defined(__MINGW32__) || defined(__MINGW64__)
 #    ifndef YAML_CPP_API
 #      ifdef yaml_cpp_EXPORTS
          /* We are building this library */
-#        pragma message( "Defining YAML_CPP_API for DLL export" )
-#        define YAML_CPP_API __declspec(dllexport)
+#        pragma message( "Defining  for DLL export" )
+#        define  __declspec(dllexport)
 #      else
          /* We are using this library */
-#        pragma message( "Defining YAML_CPP_API for DLL import" )
-#        define YAML_CPP_API __declspec(dllimport)
+#        pragma message( "Defining  for DLL import" )
+#        define  __declspec(dllimport)
 #      endif
 #    endif
 #    ifndef YAML_CPP_NO_EXPORT
 #      define YAML_CPP_NO_EXPORT
 #    endif
 #  else /* No _MSC_VER */
-#    ifndef YAML_CPP_API
+#    ifndef 
 #      ifdef yaml_cpp_EXPORTS
          /* We are building this library */
-#        define YAML_CPP_API __attribute__((visibility("default")))
+#        define  __attribute__((visibility("default")))
 #      else
          /* We are using this library */
-#        define YAML_CPP_API __attribute__((visibility("default")))
+#        define  __attribute__((visibility("default")))
 #      endif
 #    endif
 #    ifndef YAML_CPP_NO_EXPORT
@@ -51,7 +51,7 @@
 #endif
 
 #ifndef YAML_CPP_DEPRECATED_EXPORT
-#  define YAML_CPP_DEPRECATED_EXPORT YAML_CPP_API YAML_CPP_DEPRECATED
+#  define YAML_CPP_DEPRECATED_EXPORT  YAML_CPP_DEPRECATED
 #endif
 
 #ifndef YAML_CPP_DEPRECATED_NO_EXPORT

@@ -13,7 +13,7 @@
 #include "yaml-cpp/dll.h"
 
 namespace YAML {
-class YAML_CPP_API ostream_wrapper {
+class  ostream_wrapper {
  public:
   ostream_wrapper();
   explicit ostream_wrapper(std::ostream& stream);

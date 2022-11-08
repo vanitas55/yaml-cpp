@@ -28,7 +28,7 @@ enum REGEX_OP {
 // simplified regular expressions
 // . Only straightforward matches (no repeated characters)
 // . Only matches from start of string
-class YAML_CPP_API RegEx {
+class  RegEx {
  public:
   RegEx();
   explicit RegEx(char ch);
@@ -36,10 +36,10 @@ class YAML_CPP_API RegEx {
   RegEx(const std::string& str, REGEX_OP op = REGEX_SEQ);
   ~RegEx() = default;
 
-  friend YAML_CPP_API RegEx operator!(const RegEx& ex);
-  friend YAML_CPP_API RegEx operator|(const RegEx& ex1, const RegEx& ex2);
-  friend YAML_CPP_API RegEx operator&(const RegEx& ex1, const RegEx& ex2);
-  friend YAML_CPP_API RegEx operator+(const RegEx& ex1, const RegEx& ex2);
+  friend  RegEx operator!(const RegEx& ex);
+  friend  RegEx operator|(const RegEx& ex1, const RegEx& ex2);
+  friend  RegEx operator&(const RegEx& ex1, const RegEx& ex2);
+  friend  RegEx operator+(const RegEx& ex1, const RegEx& ex2);
 
   bool Matches(char ch) const;
   bool Matches(const std::string& str) const;

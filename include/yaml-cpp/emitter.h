@@ -30,7 +30,7 @@ struct _Null;
 namespace YAML {
 class EmitterState;
 
-class YAML_CPP_API Emitter {
+class Emitter {
  public:
   Emitter();
   explicit Emitter(std::ostream& stream);

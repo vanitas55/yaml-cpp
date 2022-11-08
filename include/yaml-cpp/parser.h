@@ -23,7 +23,7 @@ struct Token;
  * A parser turns a stream of bytes into one stream of "events" per YAML
  * document in the input stream.
  */
-class YAML_CPP_API Parser {
+class  Parser {
  public:
   /** Constructs an empty parser (with no input. */
   Parser();

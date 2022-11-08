@@ -20,7 +20,7 @@ class node;
 
 namespace YAML {
 namespace detail {
-class YAML_CPP_API memory {
+class  memory {
  public:
   memory() : m_nodes{} {}
   node& create_node();
@@ -31,7 +31,7 @@ class YAML_CPP_API memory {
   Nodes m_nodes;
 };
 
-class YAML_CPP_API memory_holder {
+class  memory_holder {
  public:
   memory_holder() : m_pMemory(new memory) {}
 

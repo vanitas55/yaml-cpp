@@ -27,7 +27,7 @@ class node;
 
 namespace YAML {
 namespace detail {
-class YAML_CPP_API node_data {
+class  node_data {
  public:
   node_data();
   node_data(const node_data&) = delete;

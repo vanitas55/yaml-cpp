@@ -26,7 +26,7 @@ struct iterator_value;
 }  // namespace YAML
 
 namespace YAML {
-class YAML_CPP_API Node {
+class  Node {
  public:
   friend class NodeBuilder;
   friend class NodeEvents;
@@ -137,9 +137,9 @@ class YAML_CPP_API Node {
   mutable detail::node* m_pNode;
 };
 
-YAML_CPP_API bool operator==(const Node& lhs, const Node& rhs);
+ bool operator==(const Node& lhs, const Node& rhs);
 
-YAML_CPP_API Node Clone(const Node& node);
+ Node Clone(const Node& node);
 
 template <typename T>
 struct convert;
